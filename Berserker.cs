@@ -6,27 +6,40 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     public class Berserker : Guerrero
     {
         public int furia;
+        public string arma;
+        public int fuerza;
 
-        public Berserker()
+        public Poder(int potencia)
         {
-            this.furia = 0;
-            this.arma = "Hacha de batalla";
-            this.fuerza = 20;
+            fuerza = potencia;
+            potencia = 20;
+        }
+
+        public Mejora(int desatado)
+        {
+            furia = desatado;
+            desatado = 0;
+        }
+
+        public Equipamiento(string equipo)
+        {
+            arma = equipo;
+            equipo = "Hacha de batalla";
         }
 
         public void EntrarEnFuria()
         {
-            furia += 30;
-            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + furia);
+            desatado += 30;
+            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + desatado);
         }
 
         public void AtaqueFurioso()
         {
-            if (furia >= 50)
+            if (desatado >= 50)
             {
                 Console.WriteLine(nombre + " desata un ataque furioso devastador!");
-                Console.WriteLine("Daño masivo: " + (fuerza * 3 + furia));
-                furia = 0;
+                Console.WriteLine("Daño masivo: " + (potencia * 3 + desatado));
+                desatado = 0;
             }
             else
             {
@@ -41,9 +54,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
                    "\nClase: " + this.GetType().Name +
                    "\nNivel: " + nivel +
                    "\nVida: " + vida +
-                   "\nFuerza: " + fuerza +
-                   "\nArma: " + arma +
-                   "\nFuria: " + furia;
+                   "\nFuerza: " + potencia +
+                   "\nArma: " + equipo +
+                   "\nFuria: " + desatado;
         }
     }
 }
