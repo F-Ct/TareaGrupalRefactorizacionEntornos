@@ -7,12 +7,20 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
     {
         public int fuerza;
         public string arma;
+		private string nombre;
 
         public Guerrero()
         {
             this.fuerza = 15;
             this.arma = "Espada";
         }
+
+		public Guerrero(string nombre) : base(nombre)
+		{
+			this.nombre = nombre;
+			this.fuerza = 15;
+            this.arma = "Espada";
+		}
 
         public void AtaquePoderoso()
         {

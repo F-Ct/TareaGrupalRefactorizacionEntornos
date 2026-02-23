@@ -5,14 +5,24 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 {
     public class Mago : Personaje
     {
-        public int mana;
+        private int _mana;
         public string hechizo;
+		private string nombre;
+
+		public int mana{get; set;};
 
         public Mago()
         {
             this.mana = 100;
             this.hechizo = "Bola de fuego";
         }
+
+		public Mago(string nombre) : base (nombre)
+		{
+			this.nombre = nombre
+			this.mana = 100;
+            this.hechizo = "Bola de fuego";
+		}
 
         public void LanzarHechizo()
         {

@@ -10,9 +10,16 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         public int nivel;
 
         public string Nombre { get; set; }
-
+        
         public Personaje()
         {
+            this.vida = 100;
+            this.nivel = 1;
+        }
+
+        public Personaje(string nombre)
+        {
+            this.nombre = nombre;
             this.vida = 100;
             this.nivel = 1;
         }
