@@ -33,5 +33,17 @@ namespace ProyectoRPG
             if (mana > 100) mana = 100;
             Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + mana);
         }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida +
+                   "\nMana: " + mana +
+                   "\nHechizo: " + hechizo;
+        }
+    }
     }
 }

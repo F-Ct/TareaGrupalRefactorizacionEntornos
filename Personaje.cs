@@ -4,9 +4,11 @@ namespace ProyectoRPG
 {
     public class Personaje
     {
-        public string nombre;
+        private string nombre;
         public int vida;
         public int nivel;
+
+        public string Nombre { get; set; }
 
         public Personaje()
         {
@@ -31,5 +33,15 @@ namespace ProyectoRPG
             vida += 20;
             Console.WriteLine(nombre + " ha subido al nivel " + nivel + "!");
         }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida;
+        }
+    }
     }
 }

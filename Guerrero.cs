@@ -23,5 +23,16 @@ namespace ProyectoRPG
         {
             Console.WriteLine(nombre + " se defiende con su escudo, reduciendo el daño recibido.");
         }
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida +
+                   "\nFuerza: " + fuerza +
+                   "\nArma: " + arma;
+        }
+    }
     }
 }
