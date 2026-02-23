@@ -1,0 +1,245 @@
+Salario y nómina
+-----------------
+-Salario -> Son las retribuciones que cobra el trabajador por cuenta ajena por los servicios prestados.
+-Salario en dinero -> El empresario nos puede pagar en moneda de curso legal (€) -----------------------------> Metalico/Transferencia/Cheque
+-Salario en especie -> EL empresario nos paga en productos distintos al dinero (bienes materiales(Coche, vivienda...)) Máx 30% de nuestro salario normal.
+-Salario mínimo interprofesional (SMI) -> Salario minimo para una persona que trabaje a jornada completa, que el gobierno regula cada año. (2026 -> 1221€ bruto/mes 14 pagas) 
+-Salario base -> Salario minimo que establece el convenio colectivo o el contrato. 
+
+Complementos Salariales
+--------------------------
+-Complementos Personales/Plus -> Plus de antiguedad/Plus de Idiomas/Plus de Titulos o certificados.
+-Complementos Asociados al puesto de trabajo -> Plus de Toxicidad/Plus de peligrosidad/Plus de turnicidad/Plus de nocturnidad.
+-Complementos por cantidad o calidad de trabajo -> Incentivos/Primas/Comisiones
+
+-Pagas Extraordinarias -> Minimo 2 pagas extras por importe de salario base
+Prorrateadas -> suma de las pagas extras/12 -> eso es lo que te pagan de mas cada mes.
+No prorrateadas -> Las pagas extras (2) te las dan en el mes 6 y 12. Además de tu salario.
+
+
+-Complementos no salariales -> Compesaciones por gasto : 
+
+Plus de transporte publico
+Plus de distancia
+Plus de viaje---------> Si pernocta -> Si duerme y come fuera  // Si no pernocta -> Come fuera.
+
+
+
+-Locomocion o kilometraje --> Gasolina/peaje/Etc
+
+-Ropa de trabajo, uniformes
+
+
+
+-Salario bruto o devengo -> Todo lo que paga el empresario al trabajador.
+
+
+Bases de cotizacion
+-----------------------
+
+-Contingencias comunes --> Resfriados, enfermedades comunes
+-Contingencias profesionales -> Enfermedades profesionales, desempleo
+-Contingencias extras -> Horas extras realizadas 
+-IRPF -> Hacienda
+--------------------------------------------
+
+1º Calcular devengo
+2º Calcular B.C.
+
+
+
+B.C.Contingencias comunes
+
+Si cotiza -> Sumar cantidad a base.
+Si no -> no se suma.
+
+Si cotiza --> Salario base / Complementos salariales o pluses/ 1/6 de la p.e
+
+
+NO cotiza --> locomocion, si hay factura no se cotiza, si no hay factura, 0,26€/km no cotiza.
+	  --> Dietas. Estancias en hotel: si hay factura, no se cotiza. 
+	  	      Si no hay factura: Pernocto -> max 53,34€/dia no cotiz // No pernocto max 26,67€/dia no cotiz.
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calcula la nomina del mes de abril de dolores, ingeniera que se encuentra en el grupo 1 de coitzacion contrato de duracion deter. 
+S.B = 2000
+Incentivo = 200
+Plus convenio = 60
+H.ex = 140€ 
+
+
+3pe al año por valor del Sb cobrado de forma... viaje de trabajo de 5 dias, empresa abono = dietas = 400, 100 transportes y factura de renfe sin hijos y soltera --> 18% IRPF 
+
+
+
+
+
+Salario Devengo:
+
+2400€ --> SB, incentivo, plus convenio, H.ex.
+
+Dietas y transporte --> 500€ No cotiz. 
+
+Pagas Extras --> 500€ 
+
+Total: 3400€ Bruto.
+
+--------------------------------------------------------
+
+a) BBCC = 2000 + 200 + 60 + 500 + 133,3 = 2893.3€
+
+
+No cotiza los gastos de transporte. 
+5 días x 53,34€ --> 266.7€ no cotiz. 
+
+400 - 266,7€ = 133,3€ cotiz.
+----------------------------------------------------------
+b) BBCP = BBCC + HE = 2893.3 + 140 = 3033,3€
+
+c) BCHE = 140€
+
+d) BIRPF = 3400 - 266,7 - 100 = 3033,3€
+
+--------------------------------------------------------
+Check-  miramos que grupo es, en este caso grupo 1. Nos vamos al cuadro del grupo para ver base min y base max, se ven las dos primeras Bases de cotizacion y si hay alguna por debajo del minimo
+se queda en el minimo. 
+---------------------------------------------------------
+
+3) Tipos de cotiz. 
+
+		 				Trabajador				Empresa
+						----------				--------	
+Contingencias comunes				4,7% BCCC = 135,98			23,6% BCCC = 682,82€
+MET						0,13% BCCP = 3,94			0,67% BCCP = 20,32€
+Desempleo					1,6% BCCP = 48,53			6,20% BCCP = 203,23€
+Fogaba						---------  				0,20% BCCP = 6,1€ 
+FP						0,10% BCCP = 3,03			0,60% BCCP = 18,20€	
+ME						4,7%  BHE = 6,58			23,6% BME = 33,04€
+
+
+BIRPF = 3033,3 * 18% = 545,99€    **********
+BIRPF = 3400 - 545.99 - 198,06 =  |2655,95€|
+				  **********
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Calcula nomina de mayo de mercedes. Contrato indefinido tiempo completo. 
+Está en grupo de cotizacion 4 y este mes tiene las siguientes percepciones salariales
+
+SB = 1250€
+Convenio = 200€ 
+Club Transporte = 80€
+H.ex = 100€
+Dietas = 120€ por viaje de 6 dias sin pernoctar.
+
+La trabajadora recibe 2 pagas en junio y diciembre mas salario base y club convenio.
+
+
+
+
+1) Devengo --> 1250 + 200 + 100 +120 = 1750€
+2) 
+
+BCCC = 2150 +80 +200 +24,67 = 1771,67
+BCCP = 1771,67 + 100 = 1871,67€ 
+BCHE = 100€
+BIRPF = 1750 - 120€ = 1730€ 
+
+CHECK---
+
+
+ESTA DENTRO DEL MINIMO Y MAX. 
+
+------------------------------
+
+
+		 				Trabajador				
+						----------					
+Contingencias comunes				4,7% BCCC = 83,27€			
+MET						0,13% BCCP = 2,43€			
+Desempleo					1,6% BCCP = 29,01€			
+Fogaba						---------  				
+FP						0,10% BCCP = 1,87€				
+ME						4,7%  BHE = 4,7€			
+
+
+BIRPF = 1630 * 18% = 293€         **********
+BIRPF = 1630 - 293 - 121,28   =   |1215,72€|
+				  **********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Calcula la nomina del mes de mayo de Lorena. Administrativa que trabaja en una empresa del sector del transporte. Se encuentra en el G.C 5 . COntrato indefinido.
+
+
+
+SB = 1200€ 
+incentivos = 100€ 
+Convenio = 160€ 
+Horas Extras = 50€ 
+
+2pagas extras valor de SB prorrateada.
+
+Viaje traabajo 3 dias. 
+Dietas = 300€  53,34€/dia no cotiz                           												300 - 160,02 = 139.98€ Cotiza.
+Transporte = 100€ Sin factura por 50 km. 0,26€/km no cotiza  100- 13 = 87€ Cotiza.
+
+
+IRPF 10%
+--------------------------------------
+
+ 
+1)
+Devengo = 1200€ + 100 + 160 + 50 + 400 + 200 = 2110€
+
+
+
+
+2)
+BCCC =  1200 + 100 + 160 + 139,98 + 87 + 200 = 1886,98 €
+BCCP =  1886.98 + 50 = 1936.98€ 
+BCHE =  50€
+BIRPF = 2110 - 13 - 160.02 = 1936.98€ 
+
+
+
+CHECK BIEN
+		 				Trabajador				
+						----------					
+Contingencias comunes				4,7% BCCC = 88.68€			
+MET						0,13% BCCP = 2.51€			
+Desempleo					1,6% BCCP = 30.99€			
+Fogaba						---------  				
+FP						0,10% BCCP = 1.93€				
+ME						4,7%  BHE = 2.35€			
+
+
+BIRPF = 1936.98* 10% = 193.7€          **********
+BIRPF = 2110 - 193.7 - 126.46   =      |1789.84€|
+				       **********	
+
+
+
+
