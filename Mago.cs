@@ -3,14 +3,20 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
+	/// <summary>
+	///	Es una clase nueva que crea un guerrero Mago que hereda todo lo que tiene un Personaje
+	/// </summary>
     public class Mago : Personaje
     {
+		/// <summary>
+		///	Son los metodos que hacen unicos las habilidades del propio personaje
+		/// </summary>
         private int _mana;
         public string hechizo;
 		private string nombre;
 
 		public int mana{get; set;};
-
+		
         public Mago()
         {
             this.mana = 100;
@@ -38,6 +44,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             }
         }
 
+		/// <summary>
+		///	Es un metodo que no devuelve nada simplemente hace cambios en valores que ya habian sido asignados anteriormente internamente en el juego o en este caso, en el personaje
+		/// </summary>
         public void Meditar()
         {
             mana += 30;
@@ -45,6 +54,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             Console.WriteLine(nombre + " medita y recupera mana. Mana actual: " + mana);
         }
         
+		/// <summary>
+		///	Es un metodo que devuelve en una cadena los valores o caracteristicas del personaje y las muestra por pantalla
+		/// </summary>
         public string MostrarInfo()
         {
             return "=== INFORMACIÓN DEL PERSONAJE ===" +
