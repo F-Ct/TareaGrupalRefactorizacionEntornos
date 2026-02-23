@@ -23,7 +23,7 @@ namespace ProyectoRPG
 
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
+            bers.nombre = "Guts";
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
@@ -39,7 +39,7 @@ namespace ProyectoRPG
 
             Console.WriteLine("\n--- Nigromante ---");
             Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
+            nigro.nombre = "El que no puede ser nombrado";
             nigro.CapturarAlma();
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();

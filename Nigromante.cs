@@ -5,41 +5,53 @@ namespace ProyectoRPG
     public class Nigromante : Mago
     {
         public int almasCapturadas;
+        public string hechizo;
+        public int mana;
 
-        public Nigromante()
+        public ManaTotal(int magia)
         {
-            this.almasCapturadas = 0;
-            this.hechizo = "Drenar vida";
-            this.mana = 120;
+         mana = magia;
+         magia = 120;
+        }
+        public Almas (int almasObtenidas)
+        {
+            almasCapturadas = almasObtenidas;
+            almasObtenidas = 0;
+        }
+
+        public Habilidad (string conjuro)
+        {
+            hechizo = conjuro;
+            conjuro = "Drenado de vida";
         }
 
         public void InvocarNoMuerto()
         {
-            if (mana >= 40 && almasCapturadas >= 1)
+            if (magia >= 40 && almasObtenidas >= 1)
             {
                 Console.WriteLine(nombre + " invoca un no-muerto usando un alma capturada!");
-                mana -= 40;
-                almasCapturadas--;
-                Console.WriteLine("Almas restantes: " + almasCapturadas);
+                magia -= 40;
+                almasObtenidas--;
+                Console.WriteLine("Almas restantes: " + almasObtenidas);
             }
             else
             {
-                Console.WriteLine("No hay suficiente mana o almas para invocar.");
+                Console.WriteLine("No hay suficiente magia o almas para invocar.");
             }
         }
 
         public void CapturarAlma()
         {
-            almasCapturadas++;
-            Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasCapturadas);
+            almasObtenidas++;
+            Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasObtenidas);
         }
 
         public void DrenarVida()
         {
-            if (mana >= 25)
+            if (magia >= 25)
             {
                 Console.WriteLine(nombre + " drena la vida de su enemigo!");
-                mana -= 25;
+                magia -= 25;
                 vida += 15;
                 Console.WriteLine("Vida recuperada. Vida actual: " + vida);
             }
