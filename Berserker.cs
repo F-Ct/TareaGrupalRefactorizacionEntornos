@@ -27,13 +27,13 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             equipo = "Hacha de batalla";
         }
 
-        public void EntrarEnFuria()
+        public void DesatarPoder()
         {
             desatado += 30;
             Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + desatado);
         }
 
-        public void AtaqueFurioso()
+        public void AtaqueDesatado()
         {
             if (desatado >= 50)
             {

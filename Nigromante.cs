@@ -3,12 +3,17 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
+	/// Hereda de Mago.
     public class Nigromante : Mago
     {
+		/// Cantidad de almas capturadas por el nigromante.
         public int almasCapturadas;
+		///Hechizo que conoce.
         public string hechizo;
+		/// Total del mana que posee.
         public int mana;
 
+		///Constructor del ManaTotal, las Almas y su Habilidad.
         public ManaTotal(int magia)
         {
          mana = magia;
@@ -26,7 +31,8 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             conjuro = "Drenado de vida";
         }
 
-        public void InvocarNoMuerto()
+		/// Invoca un no-muerto utilizando las almas capturadas.
+        public void RevivirAlmas()
         {
             if (magia >= 40 && almasObtenidas >= 1)
             {
@@ -40,14 +46,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
                 Console.WriteLine("No hay suficiente magia o almas para invocar.");
             }
         }
-
-        public void CapturarAlma()
+		///  Captura un alma para usarla en rituales o invocaciones.
+        public void ConservarAlma()
         {
             almasObtenidas++;
             Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasObtenidas);
         }
-
-        public void DrenarVida()
+		
+		/// Drena la vida de un enemigo para recuperar energía.
+        public void Sanguijuela()
         {
             if (magia >= 25)
             {
