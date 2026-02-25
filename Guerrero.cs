@@ -2,8 +2,8 @@ using System;
 
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
-{
-    public class Guerrero : Personaje
+{	
+   public class Guerrero : Personaje
     {
         public int fuerza;
         public string arma;

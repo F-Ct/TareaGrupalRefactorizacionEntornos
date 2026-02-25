@@ -16,20 +16,27 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 		private string nombre;
 
 		public int mana{get; set;};
-		
+		/// <summary>
+		/// Es el constructor de la clase que le aplica los atributos que tiene que tener cuando se cree (instancie) el objeto
+		/// </summary>
         public Mago()
         {
             this.mana = 100;
             this.hechizo = "Bola de fuego";
         }
 
+		/// <summary>
+		/// Lo mismo que el anterior constructor pero ejecutando primero el constructor padre y luego a eso se le suma los atributos propios del Mago
+		/// </summary>
 		public Mago(string nombre) : base (nombre)
 		{
 			this.nombre = nombre
 			this.mana = 100;
             this.hechizo = "Bola de fuego";
 		}
-
+		/// <summary>
+		/// Es un metodo que cambia valores internos y hace efectos en el programa cambiando valores
+		/// </summary>
         public void LanzarHechizo()
         {
             if (mana >= 20)
