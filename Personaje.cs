@@ -11,9 +11,11 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         /// <summary>
         /// Atributos publicos. Estos sirven para despues nombrarlos en Metodos , propiedades, constructores....
         /// </summary>
-        public string nombre;
+        private string nombre;
         public int vida;
         public int nivel;
+        
+        public string Nombre { get; set; }
         
         /// <summary>
         /// Constructor, el cual le da unas estadisticas a cualquier personaje nuevo que se cree
@@ -26,6 +28,13 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         /// <summary>
         /// Metodo atacar, que hace que el personaje realice un ataque
         /// </summary>
+        public Personaje(string nombre)
+        {
+            this.nombre = nombre;
+            this.vida = 100;
+            this.nivel = 1;
+        }
+
         public void Atacar()
         {
             Console.WriteLine(nombre + " realiza un ataque básico!");
@@ -50,5 +59,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             vida += 20;
             Console.WriteLine(nombre + " ha subido al nivel " + nivel + "!");
         }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida;
+        }
     }
 }
+

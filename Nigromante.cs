@@ -69,5 +69,15 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
                 Console.WriteLine("Vida recuperada. Vida actual: " + vida);
             }
         }
+        
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida;
+        }
+    }
     }
 }

@@ -13,12 +13,20 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         /// </summary>
         public int fuerza;
         public string arma;
+		private string nombre;
         /// <summary>
         /// Constructor del gerrero, el cual asigna sus estadisticas y arma principal
         /// </summary>
         public Guerrero()
         {
             this.fuerza = 15;
+            this.arma = "Espada";
+        }
+
+		public Guerrero(string nombre) : base(nombre)
+		{
+			this.nombre = nombre;
+			this.fuerza = 15;
             this.arma = "Espada";
         }
         /// <summary>
@@ -38,5 +46,16 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         {
             Console.WriteLine(nombre + " se defiende con su escudo, reduciendo el daño recibido.");
         }
+        public string MostrarInfo()
+        {
+            return "=== INFORMACIÓN DEL PERSONAJE ===" +
+                   "\nNombre: " + nombre +
+                   "\nClase: " + this.GetType().Name +
+                   "\nNivel: " + nivel +
+                   "\nVida: " + vida +
+                   "\nFuerza: " + fuerza +
+                   "\nArma: " + arma;
+        }
     }
 }
+
