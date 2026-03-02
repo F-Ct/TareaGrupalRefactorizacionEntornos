@@ -3,44 +3,63 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
+	/// Hereda de Mago.
     public class Nigromante : Mago
     {
+		/// Cantidad de almas capturadas por el nigromante.
         public int almasCapturadas;
+		///Hechizo que conoce.
+        public string hechizo;
+		/// Total del mana que posee.
+        public int mana;
 
-        public Nigromante()
+		///Constructor del ManaTotal, las Almas y su Habilidad.
+        public ManaTotal(int magia)
         {
-            this.almasCapturadas = 0;
-            this.hechizo = "Drenar vida";
-            this.mana = 120;
+         mana = magia;
+         magia = 120;
+        }
+        public Almas (int almasObtenidas)
+        {
+            almasCapturadas = almasObtenidas;
+            almasObtenidas = 0;
         }
 
-        public void InvocarNoMuerto()
+        public Habilidad (string conjuro)
         {
-            if (mana >= 40 && almasCapturadas >= 1)
+            hechizo = conjuro;
+            conjuro = "Drenado de vida";
+        }
+
+		/// Invoca un no-muerto utilizando las almas capturadas.
+        public void RevivirAlmas()
+        {
+            if (magia >= 40 && almasObtenidas >= 1)
             {
                 Console.WriteLine(nombre + " invoca un no-muerto usando un alma capturada!");
-                mana -= 40;
-                almasCapturadas--;
-                Console.WriteLine("Almas restantes: " + almasCapturadas);
+                magia -= 40;
+                almasObtenidas--;
+                Console.WriteLine("Almas restantes: " + almasObtenidas);
             }
             else
             {
-                Console.WriteLine("No hay suficiente mana o almas para invocar.");
+                Console.WriteLine("No hay suficiente magia o almas para invocar.");
             }
         }
-
-        public void CapturarAlma()
+		///  Captura un alma para usarla en rituales o invocaciones.
+        public void ConservarAlma()
         {
-            almasCapturadas++;
-            Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasCapturadas);
+            almasObtenidas++;
+            Console.WriteLine(nombre + " ha capturado un alma. Total: " + almasObtenidas);
         }
-
-        public void DrenarVida()
+		
+		/// Drena la vida de un enemigo para recuperar energía.
+        public void Sanguijuela()
         {
-            if (mana >= 25)
+            if (magia >= 25)
             {
                 Console.WriteLine(nombre + " drena la vida de su enemigo!");
-                mana -= 25;
+                magia -= 25;
                 vida += 15;
                 Console.WriteLine("Vida recuperada. Vida actual: " + vida);
             }

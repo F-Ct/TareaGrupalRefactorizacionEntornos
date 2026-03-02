@@ -12,35 +12,48 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
 		///	Es un atributo publico unico de este personaje
 		/// </summary>
         public int furia;
-		
+        public string arma;		
 		/// <summary>
 		///	Es un contructor (metodo) que le aplica y crea las caracteristicas del personaje y les da un valor en el juego
 		/// </summary>
-        public Berserker()
+        public int fuerza;
+
+        public Poder(int potencia)
         {
-            this.furia = 0;
-            this.arma = "Hacha de batalla";
-            this.fuerza = 20;
+            fuerza = potencia;
+            potencia = 20;
+        }
+
+        public Mejora(int desatado)
+        {
+            furia = desatado;
+            desatado = 0;
+        }
+
+        public Equipamiento(string equipo)
+        {
+            arma = equipo;
+            equipo = "Hacha de batalla";
         }
 		/// <summary>
 		///	Es un metodo que no devuelve nada simplemente hace cambios en valores que ya habian sido asignados anteriormente internamente en el juego o en este caso, en el personaje
 		/// </summary>
-        public void EntrarEnFuria()
+        public void DesatarPoder()
         {
-            furia += 30;
-            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + furia);
+            desatado += 30;
+            Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + desatado);
         }
 		
 		/// <summary>
 		///	Es un metodo que no devuelve nada simplemente hace cambios en valores que ya habian sido asignados anteriormente internamente en el juego o en este caso, en el personaje
 		/// </summary>
-        public void AtaqueFurioso()
+        public void AtaqueDesatado()
         {
-            if (furia >= 50)
+            if (desatado >= 50)
             {
                 Console.WriteLine(nombre + " desata un ataque furioso devastador!");
-                Console.WriteLine("Daño masivo: " + (fuerza * 3 + furia));
-                furia = 0;
+                Console.WriteLine("Daño masivo: " + (potencia * 3 + desatado));
+                desatado = 0;
             }
             else
             {
@@ -58,9 +71,9 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
                    "\nClase: " + this.GetType().Name +
                    "\nNivel: " + nivel +
                    "\nVida: " + vida +
-                   "\nFuerza: " + fuerza +
-                   "\nArma: " + arma +
-                   "\nFuria: " + furia;
+                   "\nFuerza: " + potencia +
+                   "\nArma: " + equipo +
+                   "\nFuria: " + desatado;
         }
     }
 }
