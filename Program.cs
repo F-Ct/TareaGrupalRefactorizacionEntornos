@@ -34,39 +34,47 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             guerrero.Atacar();
             
             /// Realiza un ataque poderoso que inflige más daño que un ataque normal.
+            ///  Metodo básico del guerrero
             guerrero.AtaquePoderoso();
             
             /// El guerrero utiliza su escudo para reducir el daño recibido.
+            ///   Metodo básico del guerrero
             guerrero.DefenderseConEscudo();
             
-            ///Un berserker es un guerrero que entra en estados de furia para aumentar su poder.
+            ///Un Berserker es un guerrero que entra en estados de furia para aumentar su poder.
+            /// Constructor por defecto del berserker.
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
             bers.nombre = "Guts";
            
             /// Entrar en estado de furia y usar sus ventajas.
+            /// Metodos básicos del berserker.
             bers.DesatarPoder();
             bers.DesatarPoder();
             bers.AtaqueDesatado();
             Console.WriteLine("\n" + bers.MostrarInfo());
 
             /// Un mago especializado en el uso de hechizos y energía mágica.
+            /// Constructor por defecto del mago.
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
             magi.nombre = "Merlín";
             
             ///Ejecutar los hechizos.
+            ///  Metodos básicos del mago.
             magi.LanzarHechizo();
             magi.LanzarHechizo();
             magi.Meditar();
             magi.LanzarHechizo();
 
             /// Un nigromante es un maestro de las artes oscuras y es capaz de manipular almas.
+            /// Constructor por defecto del nigromante.
             Console.WriteLine("\n--- Nigromante ---");
             Nigromante nigro = new Nigromante();
             nigro.nombre = "El que no puede ser nombrado";
             
             ///Manipulación de las almas.
+            ///  Metodos básicos del nigromante.
             nigro.ConservarAlma();
             nigro.ConservarAlma();
             nigro.RevivirAlmas();

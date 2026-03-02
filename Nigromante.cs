@@ -3,10 +3,12 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.GrupoX
 
 {
-	/// Hereda de Mago.
+
     public class Nigromante : Mago
     {
+		///Atributos de publicos.
 		/// Cantidad de almas capturadas por el nigromante.
+
         public int almasCapturadas;
 		///Hechizo que conoce.
         public string hechizo;
@@ -32,6 +34,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         }
 
 		/// Invoca un no-muerto utilizando las almas capturadas.
+		///Metodo para  emplear la funcion de revivir muertos.
         public void RevivirAlmas()
         {
             if (magia >= 40 && almasObtenidas >= 1)
@@ -47,6 +50,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
             }
         }
 		///  Captura un alma para usarla en rituales o invocaciones.
+		///Metodo para  emplear la funcion de almacenar las almas.
         public void ConservarAlma()
         {
             almasObtenidas++;
@@ -54,6 +58,7 @@ namespace CIFPCarlosIII.ED.UT04.GrupoX
         }
 		
 		/// Drena la vida de un enemigo para recuperar energía.
+		///Metodo para  emplear la funcion de absorber vida.
         public void Sanguijuela()
         {
             if (magia >= 25)
